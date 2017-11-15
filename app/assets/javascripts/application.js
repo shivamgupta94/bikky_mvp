@@ -14,5 +14,11 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap
+//= require masonry/jquery.masonry
 //= require_tree
 
+$(document).ready(function() {    
+  $('input[type="radio"]').click(function(evt) {
+    alert("you chose the option: " + $(this).val());
+  });
+});

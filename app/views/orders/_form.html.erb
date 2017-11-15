@@ -26,7 +26,7 @@
 
   <div class="form-group">
     <%= f.label :status %>
-    <%= f.text_field :status, class: "form-control" %>
+    <%=  f.select :status, ['Pending for Pickup','Out for Delivery','Completed'] %>
   </div>
 
   <div class="form-group">
@@ -34,10 +34,14 @@
     <%= f.datetime_select :time, class: "form-control" %>
   </div>
 
-  <div class="form-group">
-    <%= f.label :type %>
-    <%= f.text_field :ordertype, class: "form-control" %>
-  </div>
+
+<div class= "form-group">
+    
+  <%= f.label :Ordertype %>
+  <%=  f.select :ordertype, options_for_select(["Standard","Bikky-Hotbox","Bikky-Coldbox"], disabled:["Bikky-Coldbox", "Bikky-Hotbox"]) %>
+
+</div>
+
 
   <div class="form-group">
     <%= f.submit class: "btn btn-primary" %>

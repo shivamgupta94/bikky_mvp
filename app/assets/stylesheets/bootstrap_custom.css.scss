@@ -3,11 +3,44 @@ $navbar-default-brand-color: #3498db;
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
 
 .center {
      text-align: center;
 }
+a.navbar-text{
+	margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    font-size: 30px;
+}
 
-.navbar-brand {
+input[type="radio"]{
+  margin: 0 0 0 10px;
+}
+
+
+.navbar-brand{
      font-weight: bold;
+     padding-top: 0;
+     padding-bottom: 0;
+     padding-left: 0;
+     padding-right: 0;
+     margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.navbar-brand>img {
+     height: 100%;
+     padding-top: 0;
+     padding-bottom: 0;
+     padding-left: 0;
+     padding-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
 }
